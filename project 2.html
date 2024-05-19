@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="textbar">
+            <input type="text" name="textbar" id="text1" class="text1" disabled>
+        </div>
+        <div class="row1">
+            <input onclick="text1.value+= '7' " type="button" value="7" id="b7" class="btn1">
+            <input onclick="text1.value+= '8' " type="button" value="8" id="b8" class="btn1">
+            <input onclick="text1.value+= '9' " type="button" value="9" id="b9" class="btn1">
+            <input onclick="text1.value+= '/' " type="button" value="/" id="b11" class="btn1">
+        </div>
+        <div class="row1">
+            <input onclick="text1.value+= '4' " type="button" value="4" id="b4" class="btn1">
+            <input onclick="text1.value+= '5' " type="button" value="5" id="b5" class="btn1">
+            <input onclick="text1.value+= '6' " type="button" value="6" id="b6" class="btn1">
+            <input onclick="text1.value+= '*' " type="button" value="*" id="b12" class="btn1 btn2">
+        </div>
+        <div class="row1">
+            <input onclick="text1.value+= '1' " type="button" value="1" id="b1" class="btn1">
+            <input onclick="text1.value+= '2' " type="button" value="2" id="b2" class="btn1">
+            <input onclick="text1.value+= '3' " type="button" value="3" id="b3" class="btn1">
+            <input onclick="text1.value+= '-' " type="button" value="-" id="b13" class="btn1">
+        </div>
+        <div class="row1">
+            <input onclick="text1.value = '' " type="button" value="c" id="b14" class="btn1">
+            <input onclick="text1.value+= '0' " type="button" value="0" id="b10" class="btn1">
+            <input onclick="text1.value = eval(text1.value) " type="button" value="=" id="b15" class="btn1">
+            <input onclick="text1.value+= '+' " type="button" value="+" id="b16" class="btn1">
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
